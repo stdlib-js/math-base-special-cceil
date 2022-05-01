@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-cceil",
-  "version": "0.0.0",
+  "version": "0.0.7",
   "description": "Round a double-precision complex floating-point number toward positive infinity.",
   "license": "Apache-2.0",
   "author": {
