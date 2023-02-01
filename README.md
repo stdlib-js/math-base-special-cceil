@@ -24,14 +24,30 @@ limitations under the License.
 
 > Round a double-precision complex floating-point number toward positive infinity.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-cceil
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+var cceil = require( '@stdlib/math-base-special-cceil' );
 ```
 
 #### cceil( z )
@@ -39,9 +55,9 @@ import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil
 Rounds a double-precision complex floating-point number toward positive infinity.
 
 ```javascript
-import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@deno/mod.js';
-import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@deno/mod.js';
-import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@deno/mod.js';
+var Complex128 = require( '@stdlib/complex-float64' );
+var real = require( '@stdlib/complex-real' );
+var imag = require( '@stdlib/complex-imag' );
 
 var v = cceil( new Complex128( -1.5, 2.5 ) );
 // returns <Complex128>
@@ -64,9 +80,9 @@ var im = imag( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform' ).factory;
-import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@deno/mod.js';
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+var uniform = require( '@stdlib/random-base-uniform' ).factory;
+var Complex128 = require( '@stdlib/complex-float64' );
+var cceil = require( '@stdlib/math-base-special-cceil' );
 
 var rand = uniform( -50.0, 50.0 );
 
@@ -84,7 +100,93 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/cceil.h"
+```
+
+#### stdlib_base_cceil( z )
+
+Rounds a double-precision complex floating-point number toward positive infinity.
+
+```c
+#include <complex.h>
+
+double complex y = stdlib_base_cceil( 2.5-1.5*I );
+// returns 3.0-1.0*I
+```
+
+The function accepts the following arguments:
+
+-   **z**: `[in] double complex` input value.
+
+```c
+double complex stdlib_base_cceil( const double complex z );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/cceil.h"
+#include <stdio.h>
+#include <complex.h>
+
+int main() {
+    double complex x[] = { 3.14+1.5*I, -3.14-1.5*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
+
+    double complex v;
+    double complex y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = x[ i ];
+        y = stdlib_base_cceil( v );
+        printf( "cceil(%lf + %lfi) = %lf + %lfi\n", creal( v ), cimag( v ), creal( y ), cimag( y ) );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -111,7 +213,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -173,11 +275,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cceiln]: https://github.com/stdlib-js/math-base-special-cceiln/tree/deno
+[@stdlib/math/base/special/cceiln]: https://github.com/stdlib-js/math-base-special-cceiln
 
-[@stdlib/math/base/special/cfloor]: https://github.com/stdlib-js/math-base-special-cfloor/tree/deno
+[@stdlib/math/base/special/cfloor]: https://github.com/stdlib-js/math-base-special-cfloor
 
-[@stdlib/math/base/special/cround]: https://github.com/stdlib-js/math-base-special-cround/tree/deno
+[@stdlib/math/base/special/cround]: https://github.com/stdlib-js/math-base-special-cround
 
 <!-- </related-links> -->
 
