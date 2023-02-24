@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@vnull-deno/mod.js';
 ```
 
 #### cceil( z )
@@ -66,7 +66,7 @@ var im = imag( v );
 ```javascript
 var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform' ).factory;
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@deno/mod.js';
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@vnull-deno/mod.js';
 
 var rand = uniform( -50.0, 50.0 );
 
