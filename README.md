@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-cceil/tags). For example,
+
+```javascript
 import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@v0.2.1-deno/mod.js';
 ```
 
@@ -77,7 +82,7 @@ var im = imag( v );
 ```javascript
 var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform' ).factory;
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@deno/mod.js';
-import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@v0.2.1-deno/mod.js';
+import cceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cceil@deno/mod.js';
 
 var rand = uniform( -50.0, 50.0 );
 
