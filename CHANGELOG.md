@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-08-03)
+## Unreleased (2024-09-01)
 
 <section class="commits">
 
@@ -171,13 +171,11 @@ No changes reported for this release.
 
 ### BREAKING CHANGES
 
--   [`58832ee`](https://github.com/stdlib-js/stdlib/commit/58832eef6d93e6519622148242600eae93dca4d9): update minimum TypeScript version
--   [`58832ee`](https://github.com/stdlib-js/stdlib/commit/58832eef6d93e6519622148242600eae93dca4d9): update minimum TypeScript version to 4.1 
+-   [`58832ee`](https://github.com/stdlib-js/stdlib/commit/58832eef6d93e6519622148242600eae93dca4d9): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
 -   [`4ca9916`](https://github.com/stdlib-js/stdlib/commit/4ca9916461225adfbebd0a9d1999756ff1277415): migrate to using stdlib complex number types
--   [`4ca9916`](https://github.com/stdlib-js/stdlib/commit/4ca9916461225adfbebd0a9d1999756ff1277415): migrate to using stdlib complex number types 
 
     -   To migrate, users need to change `double complex` to `stdlib_complex128_t`.
 
