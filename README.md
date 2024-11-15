@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Round a double-precision complex floating-point number toward positive infinity.
+> Round each component of a double-precision complex floating-point number toward positive infinity.
 
 <section class="installation">
 
@@ -65,7 +65,7 @@ var cceil = require( '@stdlib/math-base-special-cceil' );
 
 #### cceil( z )
 
-Rounds a double-precision complex floating-point number toward positive infinity.
+Rounds each component of a double-precision complex floating-point number toward positive infinity.
 
 ```javascript
 var Complex128 = require( '@stdlib/complex-float64-ctor' );
@@ -139,7 +139,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_cceil( z )
 
-Rounds a double-precision complex floating-point number toward positive infinity.
+Rounds each component of a double-precision complex floating-point number toward positive infinity.
 
 ```c
 #include "stdlib/complex/float64/ctor.h"

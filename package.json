@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math-base-special-cceil",
   "version": "0.2.2",
-  "description": "Round a double-precision complex floating-point number toward positive infinity.",
+  "description": "Round each component of a double-precision complex floating-point number toward positive infinity.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -46,7 +46,7 @@
     "@stdlib/complex-float64-reim": "^0.1.2",
     "@stdlib/math-base-napi-unary": "^0.2.3",
     "@stdlib/math-base-special-ceil": "^0.2.2",
-    "@stdlib/types": "^0.4.1",
+    "@stdlib/types": "^0.4.3",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
