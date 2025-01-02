@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-09)
+## Unreleased (2025-01-02)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`0d52a8a`](https://github.com/stdlib-js/stdlib/commit/0d52a8a0eec7221c0147185c4ce3317db0458498) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`e5bfdff`](https://github.com/stdlib-js/stdlib/commit/e5bfdff2d2c137f84eb5f925f8d63a3729d05eb2) - **docs:** update functions descriptions in `math/base/special/cceil` [(#3114)](https://github.com/stdlib-js/stdlib/pull/3114) _(by Gunj Joshi)_
 -   [`c4048ea`](https://github.com/stdlib-js/stdlib/commit/c4048eaebb7e01cf6dcf8a21b08ce9a723b3b764) - **build:** fix makefile to allow dependency resolution _(by Athan Reines)_
 -   [`2777e4b`](https://github.com/stdlib-js/stdlib/commit/2777e4be161869d09406e3b17947d24c64b47af2) - **bench:** resolve lint errors in benchmarks _(by Athan Reines)_
@@ -26,10 +27,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gunj Joshi
+-   Philipp Burckhardt
 
 </section>
 
