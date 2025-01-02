@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,18 +16,22 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
-* Round each component of a double-precision complex floating-point number toward positive infinity.
+* Rounds each component of a double-precision complex floating-point number toward positive infinity.
 *
-* @module @stdlib/math-base-special-cceil
+* @param z - input value
+* @returns result
 *
 * @example
 * var Complex128 = require( '@stdlib/complex-float64-ctor' );
 * var real = require( '@stdlib/complex-float64-real' );
 * var imag = require( '@stdlib/complex-float64-imag' );
-* var cceil = require( '@stdlib/math-base-special-cceil' );
 *
 * var v = cceil( new Complex128( -1.5, 2.5 ) );
 * // returns <Complex128>
@@ -38,12 +42,9 @@
 * var im = imag( v );
 * // returns 3.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function cceil( z: Complex128 ): Complex128;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = cceil;
