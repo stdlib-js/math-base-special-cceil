@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-02)
+## Unreleased (2026-11-13)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`0c06626`](https://github.com/stdlib-js/stdlib/commit/0c06626a9d809646f1ee63cc3d5b1214856accf2) - **docs:** update examples and clean-up [(#16598)](https://github.com/stdlib-js/stdlib/pull/16598) _(by Philipp Burckhardt)_
 -   [`c04562b`](https://github.com/stdlib-js/stdlib/commit/c04562b99ff9c456601d40206959a676cd2cb977) - **feat:** add `assign` and `strided` methods to `math/base/special/cceil` [(#16003)](https://github.com/stdlib-js/stdlib/pull/16003) _(by Karan Anand)_
 -   [`c568729`](https://github.com/stdlib-js/stdlib/commit/c568729af2a4908e564647f15cadccc8ad62f59b) - **docs:** update Markdown equation elements _(by stdlib-bot)_
 -   [`e67a5aa`](https://github.com/stdlib-js/stdlib/commit/e67a5aad659d8f6623e4ab8ac94687a8586ea83a) - **docs:** update Markdown equation elements _(by stdlib-bot)_
